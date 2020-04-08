@@ -12,7 +12,7 @@ export class SpotifyService {
     console.log('Spotify Service listo');
   }
 
-  TOKEN: string = "BQCjyuiBby4NJSLhQphYFelENBv-fFrGAZjZxXLaHTTonz4a_rKe7WYVIvAKAu3JNSf5mq4woYp7d9dHo9M";
+  TOKEN: string = "BQC33IwXRVUE8rWzGPbpPk4gqRj7zvFvrz6NcTMeN9yvvby01DSmWHEfqewM5CdZIl8fMHxbsIBiZSP5bxc";
 
   getQuery( query: string ) {
     const url = `https://api.spotify.com/v1/${ query }`;
@@ -28,8 +28,13 @@ export class SpotifyService {
                 .pipe( map( data => data['albums'].items ))
   }
 
-  getArtista( termino: string ) {
+  getArtistas( termino: string ) {
     return this.getQuery( `search?q=${ termino }&type=artist&limit=15` )
                 .pipe(map(data => data['artists'].items))
+}
+
+  getArtista( id: string ) {
+    return this.getQuery( `artists/${ id }`);
   }
+
 }

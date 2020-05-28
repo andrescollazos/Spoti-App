@@ -13,6 +13,10 @@ hr {
     cursor: pointer;
 }
 
+app-search {
+    width: 100%;
+}
+
 .img-circle {
     border-radius: 100%;
     width: 150px;

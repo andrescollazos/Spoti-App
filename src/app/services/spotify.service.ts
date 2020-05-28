@@ -12,7 +12,7 @@ export class SpotifyService {
     console.log('Spotify Service listo');
   }
 
-  TOKEN: string = "BQAINXmBKzGEayLk3PMHX200Hu_y_xUicQn-zl1FWssMYU-Y2EHqsZI4jLNlHCzs8NC0AckNNrvdNwV1Vxc";
+  TOKEN: string = "BQCmtu05sC92Mo_DWNqSfWIAgFDoJeX0Yi4LmcD3TiE14JAPPVy3N6Ckpezt_1KakssGmJXSUQU5JM9Ied8"
   
   getQuery( query: string ) {
     const url = `https://api.spotify.com/v1/${ query }`;

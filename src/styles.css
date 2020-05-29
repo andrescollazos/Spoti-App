@@ -13,6 +13,10 @@ hr {
     cursor: pointer;
 }
 
+app-home {
+    width: 100%;
+}
+
 app-search {
     width: 100%;
 }
